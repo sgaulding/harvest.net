@@ -196,7 +196,7 @@ namespace Harvest.Net
         /// </summary>
         /// <param name="resource">Harvest resource request will hit</param>
         /// <param name="method">HTTP method to use</param>
-        protected IRestRequest Request(string resource, Method method = Method.GET)
+        public IRestRequest Request(string resource, Method method = Method.GET)
         {
             var request = new RestRequest();
 

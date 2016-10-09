@@ -20,5 +20,7 @@ namespace Harvest.Net
         IRestResponse Execute(IRestRequest request);
 
         IOAuth RefreshToken(string refreshToken);
+
+        IRestRequest Request(string resource, Method method = Method.GET);
     }
 }
